@@ -5,8 +5,6 @@ import {
   RefreshCw, 
   Sparkles, 
   Trash2, 
-  BookOpen, 
-  Layers, 
   CheckCircle2, 
   AlertCircle 
 } from 'lucide-react';
@@ -15,8 +13,6 @@ export default function Navbar({
   dbStatus, 
   onSeed, 
   onReset, 
-  onOpenArchitecture, 
-  onOpenViva,
   isOperating 
 }) {
   const [showConfirmReset, setShowConfirmReset] = useState(false);
@@ -43,34 +39,14 @@ export default function Navbar({
           <div 
             className={`cloud-pill ${isConnected ? 'online' : 'offline'}`}
             title={isConnected 
-              ? `Connected to MongoDB Atlas: ${dbStatus?.database || 'cloudguard_db'}`
+              ? `Connected to MongoDB: ${dbStatus?.database || 'cloudguard_db'}`
               : `Database Status: ${dbStatus?.error || 'Configure MONGODB_URI in backend/.env'}`
             }
           >
             <span className="status-dot"></span>
             <Database size={13} />
-            <span>{isConnected ? 'MongoDB Atlas: Connected' : 'Cloud DB: Standby'}</span>
+            <span>{isConnected ? 'MongoDB: Connected' : 'Cloud DB: Standby'}</span>
           </div>
-
-          {/* Architecture & Task 1 Guide */}
-          <button 
-            className="btn btn-outline btn-sm"
-            onClick={onOpenArchitecture}
-            title="View CodeAlpha Task 1 Requirements & Architecture"
-          >
-            <Layers size={14} />
-            <span>Architecture & Requirements</span>
-          </button>
-
-          {/* Viva Cheat Sheet */}
-          <button 
-            className="btn btn-outline btn-sm"
-            onClick={onOpenViva}
-            title="Viva & Interview Q&A"
-          >
-            <BookOpen size={14} />
-            <span>Viva Guide</span>
-          </button>
 
           {/* Seed Sample Records */}
           <button 

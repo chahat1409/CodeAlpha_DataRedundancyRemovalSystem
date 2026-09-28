@@ -6,8 +6,6 @@ import AddRecordForm from './components/AddRecordForm';
 import RecordsTable from './components/RecordsTable';
 import AuditLogTable from './components/AuditLogTable';
 import ValidationResultModal from './components/ValidationResultModal';
-import ArchitectureModal from './components/ArchitectureModal';
-import VivaModal from './components/VivaModal';
 
 import { 
   fetchStats, 
@@ -36,10 +34,6 @@ export default function App() {
   const [demoPreset, setDemoPreset] = useState(null);
   const [activeTab, setActiveTab] = useState('records');
   const [toastMessage, setToastMessage] = useState(null);
-
-  // Modals
-  const [showArchModal, setShowArchModal] = useState(false);
-  const [showVivaModal, setShowVivaModal] = useState(false);
 
   // Filters & Search
   const [searchTerm, setSearchTerm] = useState('');
@@ -212,8 +206,6 @@ export default function App() {
         dbStatus={dbStatus}
         onSeed={handleSeed}
         onReset={handleReset}
-        onOpenArchitecture={() => setShowArchModal(true)}
-        onOpenViva={() => setShowVivaModal(true)}
         isOperating={isOperating}
       />
 
@@ -246,10 +238,10 @@ export default function App() {
             <p style={{ fontSize: '0.84rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>
               Every submitted record undergoes strict server-side canonical normalization, deterministic 
               SHA-256 fingerprint matching, and weighted fuzzy similarity scoring before any write 
-              to <strong>MongoDB Atlas</strong> is permitted.
+              to <strong>MongoDB</strong> is permitted.
             </p>
 
-            <div style={{ background: 'rgba(15, 23, 42, 0.6)', padding: '0.85rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+            <div style={{ background: 'rgba(15, 23, 42, 0.6)', padding: '0.85rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)', display: 'flex', flexDirection: 'column', gap: '0.4rem', marginTop: 'auto' }}>
               <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--accent-cyan)' }}>
                 Authoritative Decision Flow:
               </div>
@@ -260,23 +252,6 @@ export default function App() {
                 <li><strong style={{ color: 'var(--status-fp)' }}>FALSE_POSITIVE</strong>: Same name, distinct credentials → Disambiguated & Appended!</li>
                 <li><strong style={{ color: 'var(--status-invalid)' }}>INVALID</strong>: Violates format/length constraints → Intercepted with 400.</li>
               </ul>
-            </div>
-
-            <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
-              <button 
-                className="btn btn-outline" 
-                style={{ flex: 1, fontSize: '0.78rem' }}
-                onClick={() => setShowArchModal(true)}
-              >
-                View Pipeline Specs
-              </button>
-              <button 
-                className="btn btn-secondary" 
-                style={{ flex: 1, fontSize: '0.78rem' }}
-                onClick={() => setShowVivaModal(true)}
-              >
-                Viva Defense Guide
-              </button>
             </div>
           </div>
         </div>
@@ -326,18 +301,6 @@ export default function App() {
       <ValidationResultModal 
         result={validationResult}
         onClose={() => setValidationResult(null)}
-      />
-
-      {/* Architecture & CodeAlpha Specification Modal */}
-      <ArchitectureModal 
-        isOpen={showArchModal}
-        onClose={() => setShowArchModal(false)}
-      />
-
-      {/* Viva Preparation Modal */}
-      <VivaModal 
-        isOpen={showVivaModal}
-        onClose={() => setShowVivaModal(false)}
       />
 
       {/* Footer */}

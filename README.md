@@ -175,9 +175,7 @@ CodeAlpha_DataRedundancyRemovalSystem/
 │   │   │   ├── AddRecordForm.jsx     # Input form with live normalization preview
 │   │   │   ├── ValidationResultModal.jsx # Visual inspection & comparison modal
 │   │   │   ├── RecordsTable.jsx      # Verified cloud records table with filters
-│   │   │   ├── AuditLogTable.jsx     # Audit trail table with classification filter
-│   │   │   ├── ArchitectureModal.jsx # Architecture diagram & task 1 matrix
-│   │   │   └── VivaModal.jsx         # Built-in viva Q&A modal
+│   │   │   └── AuditLogTable.jsx     # Audit trail table with classification filter
 │   │   ├── services/
 │   │   │   └── api.js                # Frontend REST API client
 │   │   ├── styles/
@@ -187,10 +185,6 @@ CodeAlpha_DataRedundancyRemovalSystem/
 │   ├── index.html
 │   ├── vite.config.js
 │   └── package.json
-├── docs/
-│   ├── VIVA_PREPARATION.md           # In-depth viva defense questions & answers
-│   ├── PROJECT_VIDEO_SCRIPT.md       # 2-3 minute timed video demo script
-│   └── TASK_CHECKLIST.md             # Official task 1 verification checklist
 ├── .gitignore
 ├── package.json                      # Root coordination package
 └── README.md
