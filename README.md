@@ -8,7 +8,7 @@
 [![License](https://img.shields.io/badge/License-MIT-purple.svg)]()
 
 > **Official Task 1 Implementation for the CodeAlpha Cloud Computing Internship.**  
-> Built and submitted by a CodeAlpha Intern in repository: `CodeAlpha_DataRedundancyRemovalSystem`.
+> Built and submitted by **Chahat Kumari** ([@chahat1409](https://github.com/chahat1409) • [chahat343435@gmail.com](mailto:chahat343435@gmail.com)) in repository: [`chahat1409/CodeAlpha_DataRedundancyRemovalSystem`](https://github.com/chahat1409/CodeAlpha_DataRedundancyRemovalSystem).
 
 ---
 
@@ -466,6 +466,6 @@ CloudGuard includes a dedicated **1-Click Demonstration Toolbar** directly in th
 ---
 
 ## 17. License & Attribution
-
-This project is developed as part of the **CodeAlpha Cloud Computing Internship (Task 1: Data Redundancy Removal System)**.  
+ 
+This project is developed by **Chahat Kumari** ([@chahat1409](https://github.com/chahat1409) • [chahat343435@gmail.com](mailto:chahat343435@gmail.com)) as part of the **CodeAlpha Cloud Computing Internship (Task 1: Data Redundancy Removal System)**.  
 Licensed under the [MIT License](LICENSE).

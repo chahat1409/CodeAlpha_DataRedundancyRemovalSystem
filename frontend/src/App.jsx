@@ -309,7 +309,7 @@ export default function App() {
           <strong>CloudGuard</strong> — Data Redundancy Removal System • CodeAlpha Cloud Computing Task 1
         </p>
         <p style={{ marginTop: '0.25rem' }}>
-          Designed for MongoDB Atlas • Developed by CodeAlpha Intern • Repository: <code className="mono">CodeAlpha_DataRedundancyRemovalSystem</code>
+          Designed for MongoDB Atlas • Developed by Chahat Kumari (@chahat1409) • Repository: <code className="mono">CodeAlpha_DataRedundancyRemovalSystem</code>
         </p>
       </footer>
     </div>

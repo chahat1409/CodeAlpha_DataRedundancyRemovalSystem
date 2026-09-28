@@ -2,6 +2,7 @@
   "name": "cloudguard-frontend",
   "private": true,
   "version": "1.0.0",
+  "author": "Chahat Kumari <chahat343435@gmail.com>",
   "type": "module",
   "scripts": {
     "dev": "vite",

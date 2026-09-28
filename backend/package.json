@@ -18,7 +18,7 @@
     "mongodb-atlas",
     "cloud-computing"
   ],
-  "author": "CodeAlpha Intern",
+  "author": "Chahat Kumari <chahat343435@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
