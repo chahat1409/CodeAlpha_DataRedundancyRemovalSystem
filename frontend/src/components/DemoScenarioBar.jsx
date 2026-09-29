@@ -62,7 +62,7 @@ export default function DemoScenarioBar({ onSelectScenario }) {
       <div className="demo-bar-header">
         <div className="demo-bar-title">
           <PlayCircle size={18} />
-          <span>Interactive Task 1 Demonstration Controls</span>
+          <span>Interactive Demonstration Controls</span>
         </div>
         <div className="demo-bar-badge">
           Click any preset to auto-fill test data

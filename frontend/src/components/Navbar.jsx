@@ -29,7 +29,7 @@ export default function Navbar({
           </div>
           <div className="brand-text">
             <h1>CloudGuard</h1>
-            <div className="brand-subtitle">Data Redundancy Removal System • CodeAlpha Task 1</div>
+            <div className="brand-subtitle">Data Redundancy Removal System</div>
           </div>
         </div>
 

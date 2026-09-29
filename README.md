@@ -1,14 +1,14 @@
 # CloudGuard — Data Redundancy Removal System
 
-[![CodeAlpha Cloud Computing Internship](https://img.shields.io/badge/CodeAlpha-Cloud%20Computing%20Task%201-blue.svg)](https://www.codealpha.tech)
+[![System](https://img.shields.io/badge/System-Data%20Redundancy%20Removal-blue.svg)]()
 [![Database](https://img.shields.io/badge/Database-MongoDB%20Atlas-green.svg)](https://www.mongodb.com/atlas)
 [![Backend](https://img.shields.io/badge/Backend-Node.js%20%7C%20Express-lightgrey.svg)](https://expressjs.com)
 [![Frontend](https://img.shields.io/badge/Frontend-React%2018%20%7C%20Vite-61dafb.svg)](https://vitejs.dev)
 [![Tests](https://img.shields.io/badge/Tests-30%20Passing-brightgreen.svg)]()
 [![License](https://img.shields.io/badge/License-MIT-purple.svg)]()
 
-> **Official Task 1 Implementation for the CodeAlpha Cloud Computing Internship.**  
-> Built and submitted by **Chahat Kumari** ([@chahat1409](https://github.com/chahat1409) • [chahat343435@gmail.com](mailto:chahat343435@gmail.com)) in repository: [`chahat1409/CodeAlpha_DataRedundancyRemovalSystem`](https://github.com/chahat1409/CodeAlpha_DataRedundancyRemovalSystem).
+> **Production-Ready Implementation of Data Redundancy Removal System.**  
+> Built and maintained by **Chahat Kumari** ([@chahat1409](https://github.com/chahat1409) • [chahat343435@gmail.com](mailto:chahat343435@gmail.com)) in repository: [`chahat1409/DataRedundancyRemovalSystem`](https://github.com/chahat1409/DataRedundancyRemovalSystem).
 
 ---
 
@@ -33,11 +33,11 @@ In distributed cloud computing and cloud database architectures, data arrives co
 
 ---
 
-## 3. CodeAlpha Task 1 Requirement Mapping
+## 3. System Requirement & Architecture Mapping
 
-The table below maps every single requirement from the official CodeAlpha Cloud Computing Tasks & Instructions PDF directly to its implementation in CloudGuard:
+The table below maps every core requirement of the Data Redundancy Removal System directly to its implementation in CloudGuard:
 
-| Official Task 1 Requirement (from PDF) | Implementation in CloudGuard | Architectural Component |
+| Core System Requirement | Implementation in CloudGuard | Architectural Component |
 |---|---|---|
 | **Design a system that identifies and classifies data as redundant or false positive.** | The core `deduplicationService.js` evaluates incoming entries against candidate profiles and classifies them into `UNIQUE`, `REDUNDANT_EXACT`, `REDUNDANT_SIMILAR`, `FALSE_POSITIVE`, or `INVALID`. | [`deduplicationService.js`](backend/src/services/deduplicationService.js)<br>[`similarityService.js`](backend/src/services/similarityService.js) |
 | **Implement a validation mechanism to check new data against existing data.** | Dual-layer validation: client-side form validation provides real-time user feedback, while backend Express middleware and service perform authoritative checks against existing MongoDB Atlas records. | [`requestValidator.js`](backend/src/middleware/requestValidator.js)<br>[`recordController.js`](backend/src/controllers/recordController.js) |
@@ -127,7 +127,7 @@ flowchart TD
 ## 7. Folder Structure
 
 ```
-CodeAlpha_DataRedundancyRemovalSystem/
+DataRedundancyRemovalSystem/
 ├── backend/
 │   ├── src/
 │   │   ├── config/
@@ -321,8 +321,8 @@ To connect CloudGuard to a real cloud database on **MongoDB Atlas**:
 
 ### Step 1: Clone Repository
 ```bash
-git clone https://github.com/your-username/CodeAlpha_DataRedundancyRemovalSystem.git
-cd CodeAlpha_DataRedundancyRemovalSystem
+git clone https://github.com/your-username/DataRedundancyRemovalSystem.git
+cd DataRedundancyRemovalSystem
 ```
 
 ### Step 2: Install Dependencies
@@ -387,9 +387,9 @@ Time:        4.856 s
 
 ---
 
-## 14. How to Demonstrate Task 1 (For Evaluators)
+## 14. How to Demonstrate the System
 
-CloudGuard includes a dedicated **1-Click Demonstration Toolbar** directly in the UI. Follow these 5 steps to verify all requirements during an internship evaluation:
+CloudGuard includes a dedicated **1-Click Demonstration Toolbar** directly in the UI. Follow these 5 steps to verify all system capabilities:
 
 ### Demo 1 — Unique Record
 1. Click **"Demo 1 — Unique Record"** in the toolbar (loads *"Dr. Jane Goodall"*).
@@ -467,5 +467,5 @@ CloudGuard includes a dedicated **1-Click Demonstration Toolbar** directly in th
 
 ## 17. License & Attribution
  
-This project is developed by **Chahat Kumari** ([@chahat1409](https://github.com/chahat1409) • [chahat343435@gmail.com](mailto:chahat343435@gmail.com)) as part of the **CodeAlpha Cloud Computing Internship (Task 1: Data Redundancy Removal System)**.  
+This project is developed by **Chahat Kumari** ([@chahat1409](https://github.com/chahat1409) • [chahat343435@gmail.com](mailto:chahat343435@gmail.com)) — **Data Redundancy Removal System**.  
 Licensed under the [MIT License](LICENSE).

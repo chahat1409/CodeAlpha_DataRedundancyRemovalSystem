@@ -1,7 +1,7 @@
 {
   "name": "cloudguard-backend",
   "version": "1.0.0",
-  "description": "CloudGuard - Data Redundancy Removal System Backend API (CodeAlpha Task 1)",
+  "description": "CloudGuard - Data Redundancy Removal System Backend API",
   "main": "src/server.js",
   "type": "commonjs",
   "scripts": {
@@ -12,7 +12,6 @@
   },
   "keywords": [
     "cloudguard",
-    "codealpha",
     "deduplication",
     "data-redundancy",
     "mongodb-atlas",

@@ -1,7 +1,7 @@
 {
-  "name": "codealpha-data-redundancy-removal-system",
+  "name": "data-redundancy-removal-system",
   "version": "1.0.0",
-  "description": "CloudGuard - Data Redundancy Removal System (CodeAlpha Cloud Computing Task 1)",
+  "description": "CloudGuard - Data Redundancy Removal System",
   "scripts": {
     "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
     "dev:backend": "cd backend && npm run dev",
@@ -12,7 +12,6 @@
   },
   "keywords": [
     "cloudguard",
-    "codealpha",
     "cloud-computing",
     "data-redundancy",
     "deduplication",

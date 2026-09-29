@@ -306,10 +306,10 @@ export default function App() {
       {/* Footer */}
       <footer className="app-footer">
         <p>
-          <strong>CloudGuard</strong> — Data Redundancy Removal System • CodeAlpha Cloud Computing Task 1
+          <strong>CloudGuard</strong> — Data Redundancy Removal System
         </p>
         <p style={{ marginTop: '0.25rem' }}>
-          Designed for MongoDB Atlas • Developed by Chahat Kumari (@chahat1409) • Repository: <code className="mono">CodeAlpha_DataRedundancyRemovalSystem</code>
+          Designed for MongoDB Atlas • Developed by Chahat Kumari (@chahat1409) • Repository: <code className="mono">DataRedundancyRemovalSystem</code>
         </p>
       </footer>
     </div>

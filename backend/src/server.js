@@ -11,7 +11,7 @@ async function startServer() {
   const server = app.listen(PORT, () => {
     console.log('\x1b[36m%s\x1b[0m', '==================================================');
     console.log('\x1b[36m%s\x1b[0m', '🛡️  CloudGuard — Data Redundancy Removal System');
-    console.log('\x1b[36m%s\x1b[0m', '    CodeAlpha Cloud Computing Task 1 Backend API');
+    console.log('\x1b[36m%s\x1b[0m', '    Data Redundancy Removal System Backend API');
     console.log('\x1b[36m%s\x1b[0m', `    Server running on: http://localhost:${PORT}`);
     console.log('\x1b[36m%s\x1b[0m', `    Environment: ${process.env.NODE_ENV || 'development'}`);
     console.log('\x1b[36m%s\x1b[0m', '==================================================');
